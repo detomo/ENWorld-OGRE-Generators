@@ -1,0 +1,12 @@
+The {PieAndDragon(Gnoll Pack Name Part 1)} {PieAndDragon(Gnoll Pack Name Part 2)} are lead by a [B]{PieAndDragon(Gnoll Pack Leadership)}[/B]. Many of the gnolls {PieAndDragon(Gnoll Pack Shared Physical Trait)} and the pack is known for {PieAndDragon(Gnoll Pack Behaviour or Tactics)}. In lands near to the pack, {PieAndDragon(Gnoll Pack Demonic Influence)}. The pack contains      
+[LIST]        
+[*][B]{3d6} gnoll warriors[/B]        
+[*] [B]{PieAndDragon(Gnoll Pack Hyenas)}[/B].    {loop:{1d3+1}}         
+[*][B]{PieAndDragon(Gnoll Pack Elites)}[/B]{/loop}                 
+[/LIST]
+   {$abyssalRolls: {1d3-1}}   {if: $abyssalRolls=0} {else}   
+[LIST]   
+[*]They have abyssal allies of {loop:{$abyssalRolls}}           
+[*][B]{PieAndDragon(Gnoll Pack Abyssal Allies)}[/B]{/loop}               
+[/LIST]
+    {/if}
