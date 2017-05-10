@@ -1,0 +1,6 @@
+{$chanceOfNewerDungeonType:{1d100}}{$dungeonEntrances:{1d3+1}} [B]{Morrus[Dungeon Name Generator]}[/B] was originally a [B]{PieAndDragon(Dungeon Type)|nocaps}[/B]{if: $chanceOfNewerDungeonType>50} and now a [B]{PieAndDragon(Dungeon Type)|nocaps}[/B]{/if}. It is inhabited by [B]{PieAndDragon(Dungeon Inhabitants)|nocaps}[/B].  It is a dungeon with [B]{1d20+1d6} rooms[/B] and [B]{$dungeonEntrances} entrances[/B]         
+[LIST]             
+[*]- Main entrance is [I]{PieAndDragon(Dungeon Entrance)|nocaps}[/I] which starts with starts with a [I]{leonardoraele(Random Dungeon - Starting Area)|nocaps}[/I] {loop:¨{$dungeonEntrances-1}}      
+[*]- Another entrance is [I]{PieAndDragon(Dungeon Entrance)|nocaps}[/I]{/loop}                         
+[/LIST]
+       Someone wants adventurers to enter the dungeon and {PieAndDragon(Dungeon Goal)}
