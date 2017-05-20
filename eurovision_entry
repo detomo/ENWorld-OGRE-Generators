@@ -1,5 +1,6 @@
-{$country: {PieAndDragon(Eurovision Country)}} {$predictionRoll: {1d50}}  {switch: $country}  {case: United Kingdom} {$predictionRoll: {1d60=20}}  {case: France} {$predictionRoll: {1d60+20}}   {case: Italy} {$predictionRoll: {1d60+20}}   {case: Spain} {$predictionRoll: {1d60+20}}  {case: Germany} {$predictionRoll: {1d60+20}}  {case: default} {/switch}  
-The act is representing [B]{print: $country}[/B] with the song [B]"{PieAndDragon(Eurovision Song Title)}"[/B] (English name).
-It is in [B]{PieAndDragon(Eurovision Language)}[/B] with the theme of [B]{PieAndDragon(Eurovision Song Theme)}[/B].
-The act consists of [B]{PieAndDragon(Eurovision Band Members)}[/B], their costumes are [B]{PieAndDragon(Eurovision Costume)}[/B] and [B]{PieAndDragon(Eurovision Props and Special Effects)}[/B].
-They are predicted to [B]{PieAndDragon(Eurovision Prediction)[$predictionRoll]}[/B]   
+{$country: {PieAndDragon(Eurovision Country)}} {$predictionRoll: {1d50}} 
+{switch: $country}  {case: United Kingdom} {$predictionRoll: {1d60=20}}  {case: France} {$predictionRoll: {1d60+20}}   {case: Italy} {$predictionRoll: {1d60+20}}   {case: Spain} {$predictionRoll: {1d60+20}}  {case: Germany} {$predictionRoll: {1d60+20}}  {case: default} {/switch}   
+The act is representing [B]{print: $country}[/B] with the song [B]"{PieAndDragon(Eurovision Song Title)}"[/B] (English name). 
+It is [B]{PieAndDragon(Eurovision Music Type)}[/B] sung in [B]{PieAndDragon(Eurovision Language)}[/B] with the theme of [B]{PieAndDragon(Eurovision Song Theme)}[/B]. 
+The act consists of [B]{PieAndDragon(Eurovision Band Members)}[/B], their costumes are [B]{PieAndDragon(Eurovision Costume)}[/B] and [B]{PieAndDragon(Eurovision Props and Special Effects)}[/B]. 
+They are predicted to [B]{PieAndDragon(Eurovision Prediction)[$predictionRoll]}[/B]
