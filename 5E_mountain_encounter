@@ -1,6 +1,7 @@
-{if:$Level_Range=Any} {$LevelRangeRoll:{1d3}}{if:$LevelRangeRoll=1} {$Level_Range:Low}{elseif:$LevelRangeRoll=2}{$Level_Range:Medium}{else}{$Level_Range:High}{/if}{/if} {if:$Level_Range=Low}{PieAndDragon(5E Encounters - Mountain Low Level)}{elseif:$Level_Range=Medium}{PieAndDragon(5E Encounters - Mountain Mid Level)}{elseif:$Level_Range=High}{PieAndDragon(5E Encounters - Mountain High Level)}{/if}.   
+{if:$Level_Range=Any} {$LevelRangeRoll:{1d3}}{if:$LevelRangeRoll=1} {$Level_Range:Low}{elseif:$LevelRangeRoll=2}{$Level_Range:Medium}{else}{$Level_Range:High}{/if}{/if}  {$Group:N}{$Sentient:N} {if:$Level_Range=Low}{PieAndDragon(5E Encounters - Mountain Low Level)}{elseif:$Level_Range=Medium}{PieAndDragon(5E Encounters - Mountain Mid Level)}{elseif:$Level_Range=High}{PieAndDragon(5E Encounters - Mountain High Level)}{/if}.        
 [LIST]  
-[*]They are [B]{PieAndDragon(5E Encounters - Task)|nocaps}[/B]. Currently they are [B]{PieAndDragon(5E Encounters - Current State)}[/B].  
-[*]Possible extra: [I]{PieAndDragon(5E Encounters - Complications)}[/I]  
+
+[*]They are [B]{if:$Sentient=N}{PieAndDragon(5E Encounters - Beast Task)|nocaps}{else}{PieAndDragon(5E Encounters - Sentient Task)|nocaps}{/if}[/B]. Currently they are [B]{PieAndDragon(5E Encounters - Current State)}[/B].       
+[*]Possible extra: [I]{PieAndDragon(5E Encounters - Complications)}[/I]       
 [/LIST]
-  
+    TEST:- Sentient - {print:$Sentient}, Group - {print:$Group}    
