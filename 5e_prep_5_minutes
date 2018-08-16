@@ -1,31 +1,41 @@
-{$Race:Random}{$Gender:Random}{$ShowDetails:Yes}{$Alignment:Random}{$Format:Narrative}{$Detail:Normal}{$TreasureType:Treasure Hoard CR 0-4}{$Quest_Type:Any}Encounters[HR][/HR]{loop: $Encounters}{PieAndDragon[5E Random Encounters]}[HR][/HR]{/loop}NPCs[HR][/HR] {loop: $NPCs} {Sobran[D&D 5e NPC Generator]}[HR][/HR] {/loop} Rumours[HR][/HR] 
-[LIST]
-[*]{loop: $Rumours} 
-[*]- {Morrus(rumour)}{/loop} 
+{$Race:Random}{$Gender:Random}{$ShowDetails:Yes}{$Alignment:Random}{$Format:Narrative}{$Detail:Normal}{$TreasureType:Treasure Hoard CR 0-4}{$Quest_Type:Any}{$Encounters:4}{$Names:10}{$NPCs:4}{$Rumours:10}{$Dungeons:2}{$Settlements:4}{$Quests:4}{$TreasureHoards:4}{$UnusualLocations:4}{$Villains:2}{if:Prep_Quantity=Half}{$Encounters:2}{$Names:5}{$NPCs:2}{$Rumours:5}{$Dungeons:1}{$Settlements:2}{$Quests:2}{$TreasureHoards:2}{$Villains:1}{$UnusualLocations:2}{/if}{if:Prep_Quantity=Double}{$Encounters:8}{$Names:20}{$NPCs:8}{$Rumours:20}{$Dungeons:4}{$Settlements:8}{$Quests:8}{$TreasureHoards:8}{$Villains:4}{$UnusualLocations:8}{/if}{PieAndDragon[Dummy Gen]}Names[HR][/HR]
+[LIST] 
+[*]{loop: $Names}{$Race:Random}{$Gender:Random}
+[*]- {ChaosGenerators[5E Name Wrapper]}{/loop}
 [/LIST]
- [HR][/HR]Quests[HR][/HR] 
-[LIST]
-[*]{loop: $Quests} 
-[*]- {ChaosGenerators[D&D 5E Quest]}{/loop} 
+[HR][/HR]Encounters[HR][/HR]{loop: $Encounters}{PieAndDragon[5E Random Encounters]}[HR][/HR]{/loop}NPCs[HR][/HR]  
+[LIST] 
+[*]{loop: $NPCs}  
+[*]- {Sobran[D&D 5e NPC Generator]}{/loop}  
 [/LIST]
- [HR][/HR]Names[HR][/HR]{loop: $Names}{$Race:Random}{$Gender:Random}- {Sobran[D&D 5e Name Generator]}{/loop}[HR][/HR]Unusual Locations[HR][/HR]{$LocationType:Fantastical} 
-[LIST]
-[*]{loop: $UnusualLocations} 
-[*]- {ChaosGenerators[Wilderness Locations]}{/loop} 
+ [HR][/HR]Rumours[HR][/HR]    
+[LIST] 
+[*]{loop: $Rumours}  
+[*]- {Morrus(rumour)}{/loop}  
 [/LIST]
- [HR][/HR]Simple Dungeons[HR][/HR]{loop: $Dungeons}{ChaosGenerators[5E Quick Dungeon]}[HR][/HR]{/loop}Settlements[HR][/HR] 
-[LIST]
-[*]{loop: $Settlements} 
-[*]- {PieAndDragon(VillageTownCity)}{/loop} 
+    [HR][/HR]Quests[HR][/HR]    
+[LIST] 
+[*]{loop: $Quests}  
+[*]- {ChaosGenerators[D&D 5E Quest]}{/loop}  
 [/LIST]
- [HR][/HR]Treasure Hoards[HR][/HR] 
-[LIST]
-[*]{loop: $TreasureHoards} 
-[*]- {ChaosGenerators[Updated 5E Treasure Generator]}{/loop} 
+    [HR][/HR]Unusual Locations[HR][/HR]{$LocationType:Fantastical}    
+[LIST] 
+[*]{loop: $UnusualLocations}  
+[*]- {ChaosGenerators[Wilderness Locations]}{/loop}  
 [/LIST]
- [HR][/HR]Villains[HR][/HR] 
-[LIST]
-[*]{loop: $Villains} 
-[*]- {ChaosGenerators[Quick Fantasy Villain]}{/loop} 
+    [HR][/HR]Simple Dungeons[HR][/HR]{loop: $Dungeons}{ChaosGenerators[5E Quick Dungeon]}[HR][/HR]{/loop}Settlements[HR][/HR]    
+[LIST] 
+[*]{loop: $Settlements}  
+[*]- {PieAndDragon(VillageTownCity)}{/loop}  
 [/LIST]
-    
+    [HR][/HR]Treasure Hoards[HR][/HR]    
+[LIST] 
+[*]{loop: $TreasureHoards}  
+[*]- {ChaosGenerators[Updated 5E Treasure Generator]}{/loop}  
+[/LIST]
+    [HR][/HR]Villains[HR][/HR]    
+[LIST] 
+[*]{loop: $Villains}  
+[*]- {ChaosGenerators[Quick Fantasy Villain]}{/loop}  
+[/LIST]
+       
