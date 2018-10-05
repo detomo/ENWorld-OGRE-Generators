@@ -1,0 +1,9 @@
+{$Quest_Type:Any}{$adventurers:{1d3+1d4+1}} The [B]{PieAndDragon[Adventuring Party Name]}[/B] are [B]{print:$adventurers}[/B] adventurers. {PieAndDragon[How Adventurers Met]}. {ChaosGenerators(Adventurers - Reputation)}. 
+
+With the group are [B]{ChaosGenerators(Adventurers - Allies Servants Mounts)}[/B]
+
+Members Include 
+[LIST]
+[*]{PieAndDragon[Quick 5E Adventurer]} (leader){$adventurersUsed:1}{loop:{$adventurers-{$adventurersUsed}}} 
+[*]{PieAndDragon[Quick 5E Adventurer]}{/loop} 
+[/LIST]
